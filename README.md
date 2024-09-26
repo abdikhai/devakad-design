@@ -7,10 +7,10 @@ This project is a simple web-based academic system interface for Universitas Neg
 ![Login Page](screenshot/login.png)
 
 #### 2. Dashboard
-![Dashboard](screenshot/dashboard.png)
+![Dashboard](screenshot/dashbord.png)
 
 #### 3. Sidebar
 ![Sidebar](screenshot/sidebar.png)
 
 #### 4. Student Profile
-![Student Profile](screenshot/profil_mahasiswa.png)
+![Student Profile](screenshot/profile.png)
