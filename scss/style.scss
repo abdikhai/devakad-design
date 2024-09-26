@@ -1,0 +1,231 @@
+// Variable color
+$green: #22c55e;
+$dark: #282f3a;
+$darken: #232227;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// login page start
+.login-card {
+  background-color: white;
+  .logo {
+    img {
+      width: 50px;
+    }
+  }
+  form {
+    input {
+      height: 3rem;
+    }
+    .btn {
+      height: 3rem;
+    }
+  }
+  .login-footer {
+    a {
+      color: #22c55e;
+    }
+  }
+}
+// login page end
+
+.button-primary {
+  background-color: $green;
+  color: white;
+}
+
+// dashboard
+.navbar {
+  background-color: $dark;
+  color: white;
+  box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.5);
+  z-index: 99;
+  .container {
+    .logo-humburger {
+      .logo {
+        .logo-image {
+          width: 60px;
+        }
+      }
+    }
+
+    .button-logout {
+      .dropdown {
+        .dropdown-toggle::after {
+          content: "";
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// sidebar
+.main-wrapper {
+  position: relative;
+
+  .aside-sidebar {
+    background-color: $darken;
+    width: 20em;
+    height: 100%;
+    // min-height: 85vh;
+    position: absolute;
+    left: -20em;
+    transition: 0.7s;
+    color: white;
+    z-index: 98;
+
+    .sidebar {
+      .link-sidebar {
+        ul {
+          list-style: none;
+          .link-item {
+            .nav-link:hover {
+              background-color: white;
+              color: $green;
+            }
+
+            .accordion {
+              .accordion-item {
+                // background-color: $green;
+
+                .accordion-header {
+                  .accordion-button {
+                    background-color: white;
+                    color: $green;
+                  }
+
+                  .collapsed {
+                    background-color: $darken;
+                    color: white;
+                  }
+
+                  .accordion-button:hover {
+                    background-color: white;
+                    color: $green;
+                  }
+
+                  .accordion-button:hover.accordion-button::after {
+                    content: "";
+                    background-image: url(../img/Dropdownbiru.png);
+                  }
+
+                  .accordion-button::after {
+                    content: "";
+                    background-image: url(../img/Dropdownbiru.png);
+                  }
+
+                  .collapsed::after {
+                    content: "";
+                    background-image: url(../img/Dropdown.png);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aside-sidebar.active {
+    left: 0;
+  }
+
+  .main-content {
+    min-height: 85vh;
+    // position: relative;
+    // left: ;
+
+    .container {
+      min-height: 85vh;
+      .profile-identity {
+        .profile-section {
+          background-color: white;
+          .profile-image-wrapper {
+            img {
+              object-fit: cover;
+              margin: auto;
+              width: 14em;
+            }
+          }
+        }
+
+        .identity-section {
+          background-color: white;
+        }
+
+        .anouncement-section {
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $darken;
+  color: white;
+}
+
+// profile
+
+.profile-mahasiswa {
+  .profile-wrapper {
+    .wrapper-body {
+      background-color: #fff;
+      .img {
+        object-fit: cover;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f8f9fa !important; //
+}
+// responsive table profil
+@media screen and (max-width: 720px) {
+  .profile-mahasiswa {
+    .profile-wrapper {
+      .wrapper-body {
+        .table,
+        .table-2 {
+          th {
+            width: 45% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 992px) {
+  .profile-mahasiswa {
+    .profile-wrapper {
+      .wrapper-body {
+        .table-2 {
+          th {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+.table-striped-custom tbody tr:nth-of-type(odd) {
+  --bs-table-accent-bg: var(--bs-light); /* Use Bootstrap's light color */
+  color: black; /* Set text color to black or any other */
+}
+
+.table-custom-padding td,
+.table-custom-padding th {
+  padding-top: 1rem; /* Adjust the value for more/less padding */
+  padding-bottom: 1rem;
+}

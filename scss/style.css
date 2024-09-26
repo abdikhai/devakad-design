@@ -1,0 +1,151 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-card {
+  background-color: white;
+}
+.login-card .logo img {
+  width: 50px;
+}
+.login-card form input {
+  height: 3rem;
+}
+.login-card form .btn {
+  height: 3rem;
+}
+.login-card .login-footer a {
+  color: #22c55e;
+}
+
+.button-primary {
+  background-color: #22c55e;
+  color: white;
+}
+
+.navbar {
+  background-color: #282f3a;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.navbar .container .logo-humburger .logo .logo-image {
+  width: 60px;
+}
+.navbar .container .button-logout .dropdown .dropdown-toggle::after {
+  content: "";
+  color: white;
+}
+
+.main-wrapper {
+  position: relative;
+}
+.main-wrapper .aside-sidebar {
+  background-color: #232227;
+  width: 20em;
+  height: 100%;
+  position: absolute;
+  left: -20em;
+  transition: 0.7s;
+  color: white;
+  z-index: 98;
+}
+.main-wrapper .aside-sidebar .sidebar .link-sidebar ul {
+  list-style: none;
+}
+.main-wrapper .aside-sidebar .sidebar .link-sidebar ul .link-item .nav-link:hover {
+  background-color: white;
+  color: #22c55e;
+}
+.main-wrapper .aside-sidebar .sidebar .link-sidebar ul .link-item .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: white;
+  color: #22c55e;
+}
+.main-wrapper .aside-sidebar .sidebar .link-sidebar ul .link-item .accordion .accordion-item .accordion-header .collapsed {
+  background-color: #232227;
+  color: white;
+}
+.main-wrapper .aside-sidebar .sidebar .link-sidebar ul .link-item .accordion .accordion-item .accordion-header .accordion-button:hover {
+  background-color: white;
+  color: #22c55e;
+}
+.main-wrapper .aside-sidebar .sidebar .link-sidebar ul .link-item .accordion .accordion-item .accordion-header .accordion-button:hover.accordion-button::after {
+  content: "";
+  background-image: url(../img/Dropdownbiru.png);
+}
+.main-wrapper .aside-sidebar .sidebar .link-sidebar ul .link-item .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: "";
+  background-image: url(../img/Dropdownbiru.png);
+}
+.main-wrapper .aside-sidebar .sidebar .link-sidebar ul .link-item .accordion .accordion-item .accordion-header .collapsed::after {
+  content: "";
+  background-image: url(../img/Dropdown.png);
+}
+.main-wrapper .aside-sidebar.active {
+  left: 0;
+}
+.main-wrapper .main-content {
+  min-height: 85vh;
+}
+.main-wrapper .main-content .container {
+  min-height: 85vh;
+}
+.main-wrapper .main-content .container .profile-identity .profile-section {
+  background-color: white;
+}
+.main-wrapper .main-content .container .profile-identity .profile-section .profile-image-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  width: 14em;
+}
+.main-wrapper .main-content .container .profile-identity .identity-section {
+  background-color: white;
+}
+.main-wrapper .main-content .container .profile-identity .anouncement-section {
+  background-color: white;
+}
+
+.footer {
+  background-color: #232227;
+  color: white;
+}
+
+.profile-mahasiswa .profile-wrapper .wrapper-body {
+  background-color: #fff;
+}
+.profile-mahasiswa .profile-wrapper .wrapper-body .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f8f9fa !important;
+}
+
+@media screen and (max-width: 720px) {
+  .profile-mahasiswa .profile-wrapper .wrapper-body .table th,
+  .profile-mahasiswa .profile-wrapper .wrapper-body .table-2 th {
+    width: 45% !important;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 992px) {
+  .profile-mahasiswa .profile-wrapper .wrapper-body .table-2 th {
+    width: 30%;
+  }
+}
+.table-striped-custom tbody tr:nth-of-type(odd) {
+  --bs-table-accent-bg: var(--bs-light); /* Use Bootstrap's light color */
+  color: black; /* Set text color to black or any other */
+}
+
+.table-custom-padding td,
+.table-custom-padding th {
+  padding-top: 1rem; /* Adjust the value for more/less padding */
+  padding-bottom: 1rem;
+}/*# sourceMappingURL=style.css.map */
